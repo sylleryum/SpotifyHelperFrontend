@@ -1,0 +1,42 @@
+<!--<div *ngFor="let playlist of playlists">-->
+<!--  {{playlist.name}}-->
+<!--</div>-->
+<!--<button (click)="test()">efewfew</button>-->
+<main-menu [title]="'Get unavailable tracks'">
+  <div description>
+    <span class="font-weight-bold">Description:</span> select below one of your playlists to look for tracks that aren't available anymore.<br>
+    <span class="font-weight-bold">Use case:</span> Spotify seems to constantly remove music from their catalog so chances are that some of the music you used
+    to listed on a given playlist, isn't available anymore. This page will you find out for you.
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="p-1">My playlists:</div>
+    <div class="">
+      <div id="selectPlaylist">
+        <app-select-playlist [playlists]="playlists" (playlistSelected)="getUnavailables($event)"></app-select-playlist>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div id="unavailableResult" class="pt-2 col-12 justify-content-center text-3">
+      <ng-container *ngIf="unavailableTracks">
+        <hr>
+        <h4 class="font-weight-bold">Unavailable tracks found:</h4>
+        <p *ngFor="let unavailableTrack of unavailableTracks">
+          {{unavailableTrack.artist}} - {{unavailableTrack.name}}
+        </p>
+      </ng-container>
+
+      <ng-container *ngIf="unavailableTracks===null">
+        <h4 class="font-weight-bold">
+          All tracks are available!
+        </h4>
+      </ng-container>
+      <ng-container *ngIf="unavailableTracks===undefined">
+      </ng-container>
+
+    </div>
+  </div>
+
+
+</main-menu>

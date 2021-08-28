@@ -1,0 +1,17 @@
+.mr-auto{
+  color: var(--color1);
+}
+
+a{
+  color: var(--color1);
+  text-decoration-line: none;
+}
+a:hover:not(.active){
+  background-color: var(--color2);
+  border-radius: .3rem;
+  text-decoration-line: none;
+}
+.active{
+  font-weight: 600;
+  color: #2eb5e3
+}

@@ -1,0 +1,5 @@
+<!--<select #selplaylists (change)="getUnavailables(selplaylists.value)" class="select">-->
+<select #selplaylists class="select" (change)="onPlaylistSelected(selplaylists.value)">
+  <option *ngFor="let playlist of playlists" [value]="playlist.id">{{playlist.name}}</option>
+  <option [value]="'default'" selected="selected">Select a playlist</option>
+</select>

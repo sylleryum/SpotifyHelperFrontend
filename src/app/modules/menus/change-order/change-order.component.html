@@ -1,0 +1,26 @@
+<main-menu [title]="'Randomize playlist songs order'">
+  <div description>
+    <span class="font-weight-bold">Description:</span> select below one of your playlists to create a duplicate with songs in random order.<br>
+    <span class="font-weight-bold">Use case:</span> Spotify only has the option to play in shuffle, this page instead changes the order of the songs randomly.
+  </div>
+
+  <div class="row justify-content-center">
+
+    <div class="p-1">My playlists:</div>
+    <div class="">
+      <div id="selectPlaylist">
+        <app-select-playlist [playlists]="playlists"
+                             (playlistSelected)="randomizePlaylist($event)"></app-select-playlist>
+        <!--        <app-select-playlist [playlists]="playlists"></app-select-playlist>-->
+      </div>
+    </div>
+    <ng-container *ngIf="randomPlaylistName">
+      <div class="pt-2 col-12 text-center text-3">
+        <hr>
+        <p>Success! randomized playlist created:</p>
+        <p class="font-weight-bold">{{randomPlaylistName}}</p>
+      </div>
+    </ng-container>
+  </div>
+
+</main-menu>

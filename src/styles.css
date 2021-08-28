@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color1: #2e9cca;
+  --color2: #31E981;
+  --color3: #FE5F55;
+  --color4: #25274d;
+  --color5: #aaabb8;
+  --colorSpotify: #1DB954}
+
+.bg-1 {background-color: var(--color1) !important;}
+.bg-2 {background-color: var(--color2) !important;}
+.bg-3 {background-color: var(--color3) !important;}
+.bg-4 {background-color: var(--color4) !important;}
+.bg-5 {background-color: var(--color5) !important;}
+.bg-w {background-color: white !important;}
+.bg-spotify {background-color: var(--colorSpotify) !important;}
+
+.text-1 {color: var(--color1) !important;}
+.text-2 {color: var(--color2) !important;}
+.text-3 {color: var(--color3) !important;}
+.text-4 {color: var(--color4) !important;}
+.text-5 {color: var(--color5) !important;}
+.text-w {color: white !important;}
+.text-spotify {color: var(--colorSpotify) !important;}
+
+body {
+  /*color: var(--color4);!*text*!*/
+  color: var(--color5);
+  background-color: var(--color4);
+}
+
+.h-100 {
+  min-height: 100vh;
+}
+
+.h-80 {
+  min-height: 80vh;
+}
+hr{
+  border-color:  var(--color2);
+}
+
+a{
+  color: var(--color1);
+  text-decoration-line: none;
+}

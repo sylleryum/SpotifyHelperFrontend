@@ -1,0 +1,9 @@
+.sidebar-border {
+  border-right: 1px solid var(--color2);
+}
+
+@media (min-width: 540px) {
+  .sidebar-border {
+    min-height: 80vh;
+  }
+}
