@@ -1,27 +1,17 @@
 # SpotifyHelper
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+Frontend page, a collection of useful features for your Spotify (backend available at https://github.com/sylleryum/SpotifyHelperBackend 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+### Get unavailable tracks on my playlists:
+* Description: select one of your playlists to look for tracks that aren't available anymore.
+* Use case: Spotify seems to constantly remove music from their catalog so chances are that some of the music you used to listed on a given playlist, isn't available anymore. This page will you find out for you. 
+### Randomize track order from a playlist: 
+* Description: select below one of your playlists to create a duplicate with songs in random order.
+* Use case: Spotify only has the option to play in shuffle, this page instead changes the order of the songs randomly. 
+### Get top tracks: 
+* Description: paste artist(s) and/or album(s) and this application will add the most popular tracks to the chosen playlist.
+* Use case: Suppose you are looking for new songs/artists/albums, if you receive single song recommendations, you simply listen to it and that's it. Now let's suppose you receive the recommendation of jeff wayne's musical version of the war of the worlds which is 94:54 long, or you have a large number of artists to listen to see if you like it or not. Therefore using this application you can quickly filter on the most popular tracks to listen to. 
+### String and Youtube to Spotify: 
+* Description: Paste song name(s) or Youtube song links, one song per line and this application will convert into a Spotify playlist.
+* Use case: useful if you have several song names or songs from youtube and wants to convert to a Spotify playlist. 
