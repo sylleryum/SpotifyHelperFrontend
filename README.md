@@ -1,8 +1,8 @@
 # SpotifyHelper
 
 Available at: sylleryum.github.io/spotifyhelperfrontend/
-A collection of useful features for your Spotify! 
 
+A collection of useful features for your Spotify! <br>
 (This repo is for the Frontend page only, rest api backend is available at https://github.com/sylleryum/SpotifyHelperBackend )
 
 ## Features
