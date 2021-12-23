@@ -5,6 +5,8 @@ Available at: sylleryum.github.io/spotifyhelperfrontend/
 A collection of useful features for your Spotify! <br>
 (This repo is for the Frontend page only, rest api backend is available at https://github.com/sylleryum/SpotifyHelperBackend )
 
+![system working](https://github.com/sylleryum/SpotifyHelperFrontend/blob/main/demo.gif)
+
 ## Features
 ### Get unavailable tracks on my playlists:
 * Description: select one of your playlists to look for tracks that aren't available anymore.
