@@ -1,3 +1,5 @@
+# Important: as of November 28th this project needs to be ran locally as Heroku which was the hosting it, has closed its free tier services.
+
 # SpotifyHelper
 
 Available at: sylleryum.github.io/spotifyhelperfrontend/
